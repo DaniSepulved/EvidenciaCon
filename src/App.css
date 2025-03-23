@@ -1,0 +1,78 @@
+/* Fondo blanco para toda la página */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+/* Contenedor azul con bordes negros */
+.container {
+  width: 90vw;
+  height: 90vh;
+  background-color: lightblue;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+/* Grid principal */
+.grid {
+  display: grid;
+  width: 98%;
+  height: 98%;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  gap: 5px; /* Espaciado entre las cajas */
+}
+
+/* Estilos para cada caja */
+.box {
+  border: 3px solid black; /* Borde más grueso para que las líneas se unan */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Caja naranja grande */
+.big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orange {
+  background-color: orange;
+  grid-row: span 1;
+}
+
+/* Caja verde */
+.green {
+  background-color: green;
+}
+
+/* Cajas rojas */
+.red {
+  background-color: red;
+  width: 100%; /* Asegura que las cajas rojas ocupen espacio completo */
+  height: 100%; /* Ajusta la altura según el diseño */
+}
+
+/* Cuadro rojo interno dentro del cuadro naranja */
+.inner-box {
+  width: 50%; /* Tamaño relativo al cuadro naranja */
+  height: 50%;
+  background-color: red;
+  border: 3px solid black;
+}
+
+/* Fila de cuadros rojos */
+.row {
+  display: flex;
+  justify-content: space-between; /* Espaciado uniforme entre los cuadros */
+  grid-column: span 2; /* Asegura que ocupe todo el ancho de la fila */
+}
